@@ -1,0 +1,49 @@
+{
+  "name": "@react-ddd/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint config for React DDD projects",
+  "main": "index.js",
+  "files": [
+    "react.js",
+    "styles.js",
+    "testing.js",
+    "typescript.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-ddd/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "react-ddd"
+  ],
+  "author": "Eric Siebeneich <eric.siebeneich@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-ddd/eslint-config/issues"
+  },
+  "homepage": "https://github.com/react-ddd/eslint-config#readme",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0"
+  }
+}
