@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './index',
+    './typescript',
   ],
   parserOptions: {
     project: './tsconfig.json',

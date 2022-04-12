@@ -2,7 +2,7 @@
     "include": [
         "./.eslintrc.js",
         "*.js",
-        "tsconfig.json"
+        "./tsconfig.json"
     ],
     "exclude": [
         "node_modules"

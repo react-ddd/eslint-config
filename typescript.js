@@ -1,4 +1,13 @@
 module.exports = {
+  parser: '@typescript-eslint/parser',
+  extends: [
+    './base',
+    'airbnb-typescript/base',
+    'plugin:import/typescript',
+  ],
+  plugins: [
+    '@typescript-eslint',
+  ],
   overrides: [{
     files: ['**/*.tsx'],
     rules: {
@@ -18,7 +27,6 @@ module.exports = {
     rules: {
       curly: ['error', 'all'],
       '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: false }],
-      'react/function-component-definition': ['error', { namedComponents: 'arrow-function' }],
       'import/prefer-default-export': 'warn',
       '@typescript-eslint/consistent-type-imports': ['error', {
         prefer: 'type-imports',
@@ -38,4 +46,11 @@ module.exports = {
       'no-restricted-exports': 'off',
     },
   }],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
 };

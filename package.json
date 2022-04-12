@@ -1,9 +1,10 @@
 {
   "name": "@react-ddd/eslint-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ESLint config for React DDD projects",
   "main": "index.js",
   "files": [
+    "base.js",
     "react.js",
     "styles.js",
     "testing.js",

@@ -1,6 +1,13 @@
 module.exports = {
+  plugins: [
+    'react-hooks',
+  ],
   extends: [
     './typescript',
+    'airbnb',
+    'airbnb-typescript',
+    'airbnb/hooks',
+    'plugin:react/recommended',
   ],
   overrides: [{
     files: ['**/*.ts', '**/*.tsx'],
@@ -11,4 +18,9 @@ module.exports = {
       'react/require-default-props': 'off',
     },
   }],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
