@@ -1,9 +1,7 @@
 module.exports = {
-  extends: [
-    'airbnb/base',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-  ],
+  rules: {
+    'linebreak-style': 'off',
+  },
   overrides: [{
     files: ['**/*.js', '**/*.jsx'],
     rules: {
@@ -12,11 +10,6 @@ module.exports = {
       'no-return-assign': ['error', 'except-parens'],
       radix: 'off',
       'class-methods-use-this': 'off',
-    },
-  }, {
-    files: ['**/index.js'],
-    rules: {
-      'no-restricted-exports': 'off',
     },
   }],
 };

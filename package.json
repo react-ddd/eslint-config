@@ -1,14 +1,12 @@
 {
   "name": "@react-ddd/eslint-config",
-  "version": "0.1.1",
-  "description": "ESLint config for React DDD projects",
-  "main": "index.js",
+  "version": "0.2.0",
+  "description": "ESLint config for TypeScript or React DDD projects",
+  "main": "react.js",
   "files": [
-    "base.js",
     "react.js",
-    "styles.js",
-    "testing.js",
-    "typescript.js"
+    "typescript.js",
+    "rules/"
   ],
   "repository": {
     "type": "git",
