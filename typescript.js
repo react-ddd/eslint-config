@@ -1,9 +1,9 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
-    './base',
     'airbnb-typescript/base',
     'plugin:import/typescript',
+    './base',
   ],
   plugins: [
     '@typescript-eslint',
@@ -26,19 +26,16 @@ module.exports = {
     files: ['**/*.ts', '**/*.tsx'],
     rules: {
       curly: ['error', 'all'],
+      'brace-style': 'off',
       '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: false }],
-      'import/prefer-default-export': 'warn',
-      '@typescript-eslint/consistent-type-imports': ['error', {
-        prefer: 'type-imports',
-      }],
       'no-unused-expressions': 'off',
       '@typescript-eslint/no-unused-expressions': ['off', {
         allowShortCircuit: true,
         allowTernary: true,
       }],
-      'no-return-assign': ['error', 'except-parens'],
-      radix: 'off',
-      'class-methods-use-this': 'off',
+      '@typescript-eslint/consistent-type-imports': ['error', {
+        prefer: 'type-imports',
+      }],
     },
   }, {
     files: ['**/index.ts'],

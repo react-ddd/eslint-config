@@ -3,11 +3,11 @@ module.exports = {
     'react-hooks',
   ],
   extends: [
-    './typescript',
     'airbnb',
     'airbnb-typescript',
     'airbnb/hooks',
     'plugin:react/recommended',
+    './typescript',
   ],
   overrides: [{
     files: ['**/*.ts', '**/*.tsx'],
