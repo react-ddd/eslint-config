@@ -7,7 +7,6 @@ steps:
   image: node:18-alpine
   commands:
   - npm ci
-  - npm run test
 - name: release new version
   image: node:18-alpine
   environment:
@@ -20,11 +19,8 @@ steps:
   when:
     event:
     - promote
-    branch:
-    - main
 
 trigger:
   event:
-  - push
   - pull_request
   - promote
