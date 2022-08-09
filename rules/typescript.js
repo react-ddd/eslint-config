@@ -33,7 +33,10 @@ module.exports = {
       }],
     },
   }, {
-    files: ['**/index.ts'],
+    files: [
+      '**/index.ts',
+      '**/index.*.ts',
+    ],
     rules: {
       'no-restricted-exports': 'off',
     },
