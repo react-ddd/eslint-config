@@ -1,0 +1,30 @@
+kind: pipeline
+type: kubernetes
+name: build
+
+steps:
+- name: build artifact
+  image: node:18-alpine
+  commands:
+  - npm ci
+  - npm run test
+- name: release new version
+  image: node:18-alpine
+  environment:
+    NPM_TOKEN:
+      from_secret: npm.token
+  commands:
+  - npm version ${SEMVER_LEVEL}
+  - git push origin main --tags
+  - npm publish
+  when:
+    event:
+    - promote
+    branch:
+    - main
+
+trigger:
+  event:
+  - push
+  - pull_request
+  - promote
