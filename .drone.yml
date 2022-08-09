@@ -8,7 +8,7 @@ steps:
   commands:
   - npm ci
 - name: release new version
-  image: node:18-alpine
+  image: node:18
   environment:
     NPM_TOKEN:
       from_secret: npm.token
