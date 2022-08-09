@@ -7,7 +7,6 @@ steps:
   image: node:18-alpine
   commands:
   - npm ci
-  - npm run test
 - name: release new version
   image: node:18-alpine
   environment:
