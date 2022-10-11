@@ -1,6 +1,6 @@
 {
   "name": "@react-ddd/eslint-config",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "ESLint config for TypeScript or React DDD projects",
   "main": "react.js",
   "files": [

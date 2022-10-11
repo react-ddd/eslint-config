@@ -20,6 +20,8 @@ module.exports = {
   }, {
     files: ['**/*.ts*', '**/*.tsx'],
     rules: {
+      'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+      'eslint-comments/require-description': ['error'],
       curly: ['error', 'all'],
       'brace-style': 'off',
       '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: false }],
@@ -31,6 +33,7 @@ module.exports = {
       '@typescript-eslint/consistent-type-imports': ['error', {
         prefer: 'type-imports',
       }],
+      '@typescript-eslint/type-annotation-spacing': 'error',
     },
   }, {
     files: [
