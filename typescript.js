@@ -5,6 +5,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
+    'plugin:eslint-comments/recommended',
     './rules/base',
     './rules/typescript',
     './rules/testing',

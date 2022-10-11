@@ -10,6 +10,8 @@ module.exports = {
       'no-return-assign': ['error', 'except-parens'],
       radix: 'off',
       'class-methods-use-this': 'off',
+      'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+      'eslint-comments/require-description': ['error'],
     },
   }],
 };
