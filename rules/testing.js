@@ -24,6 +24,9 @@ module.exports = {
       'func-names': 'off',
       '@typescript-eslint/no-use-before-define': 'off',
       'no-param-reassign': 'off',
+      'import/prefer-default-export': 'off',
+      'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+      'global-require': 'off',
     },
     env: {
       jest: true,
